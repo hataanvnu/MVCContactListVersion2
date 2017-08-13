@@ -1,0 +1,26 @@
+﻿
+
+<h3>Click contact to edit:</h3>
+
+@Html.Partial("_TestOfPartialLayout")
+
+<ul class="list-group">
+    @foreach (var item in Model)
+    {
+        <li class="list-group-item">
+            @if (item.ShowAsHighlighted)
+                {
+                <a style="color: mediumseagreen;" asp-controller="People" asp-action="Edit" asp-route-id="@item.Id">@($"{item.Name} - {item.Email}")</a>
+                    <span style="float: right; color: darkslategrey;">ACME-VIP</span>
+
+            }
+            else
+            {
+                <a asp-controller="People" asp-action="Edit" asp-route-id="@item.Id">@($"{item.Name} - {item.Email}")</a>
+            }
+
+        </li>
+
+    }
+</ul>
+@Html.Partial("_TestOfPartialLayout")

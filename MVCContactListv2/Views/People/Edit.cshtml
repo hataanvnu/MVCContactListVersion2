@@ -1,0 +1,30 @@
+﻿@model PeopleEditVM
+
+<div class="form-group">
+    <form asp-controller="People" asp-action="Edit">
+        <label asp-for="Name"></label>
+        <br />
+        <input asp-for="Name" class="form-control" />
+        <span asp-validation-for="Name"></span>
+        <br />
+
+        <label asp-for="Email"></label>
+        <br />
+        <input asp-for="Email" class="form-control" />
+        <span asp-validation-for="Email"></span>
+        <br />
+        <br />
+
+        <input type="submit" value="Submit" class="btn btn-default" />
+
+    </form>
+
+    <br />
+
+    <form asp-controller="People" asp-action="Remove" asp-route-id="@Model.ID">
+        <input type="submit" value="Remove Contact" class="btn btn-danger" />
+    </form>
+
+
+
+</div>

@@ -1,0 +1,29 @@
+﻿@model PeopleCreateVM
+
+<div class="form-group">
+    <form asp-controller="People" asp-action="Create">
+        <label asp-for="Name"></label>
+        <br />
+        <input asp-for="Name" class="form-control"/>
+        <span asp-validation-for="Name" class="validationSpan"></span>
+        <br />
+
+        <label asp-for="Email"></label>
+        <br />
+        <input asp-for="Email" class="form-control"/>
+        <span asp-validation-for="Email" class="validationSpan"></span>
+        <br />
+
+        <label asp-for="BotCheck"></label>
+        <br />
+        <input asp-for="BotCheck" type="text" class="form-control"/>
+        <span asp-validation-for="BotCheck" class="validationSpan"></span>
+
+
+        <br />
+        <br />
+        <input type="submit" value="Submit" class="btn btn-default"/>
+
+    </form>
+
+</div>

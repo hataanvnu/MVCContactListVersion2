@@ -1,0 +1,52 @@
+[
+  {
+    "Id": 1,
+    "Name": "Johan Bissmark234",
+    "Email": "bissmark.92@gmail.com"
+  },
+  {
+    "Id": 2,
+    "Name": "Boda Barks",
+    "Email": "bodbar@acme.com"
+  },
+  {
+    "Id": 4,
+    "Name": "Johan",
+    "Email": "bissmark.92@gmail.com"
+  },
+  {
+    "Id": 5,
+    "Name": "Kalle Kula",
+    "Email": "kalkul@gmail.com"
+  },
+  {
+    "Id": 6,
+    "Name": "Kalle Kulllinger",
+    "Email": "kalkul@acme.com"
+  },
+  {
+    "Id": 7,
+    "Name": "Marcus mussling",
+    "Email": "marmus@gmail.com"
+  },
+  {
+    "Id": 8,
+    "Name": "Ingvild Ivarsson",
+    "Email": "ingiva@gmail.com"
+  },
+  {
+    "Id": 10,
+    "Name": "orvar Ottosson",
+    "Email": "orvott123@acme.com"
+  },
+  {
+    "Id": 12,
+    "Name": "Maria Magdalena",
+    "Email": "marmag@acme.com"
+  },
+  {
+    "Id": 13,
+    "Name": "Lisette",
+    "Email": "aamblis@acme.com"
+  }
+]

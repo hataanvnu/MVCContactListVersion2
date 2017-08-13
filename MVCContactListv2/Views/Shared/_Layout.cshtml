@@ -1,0 +1,37 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@ViewData["Title"]</title>
+    <link href="~/bootstrap.css" rel="stylesheet" />
+    <link href="~/myStyle.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div id="topMenu">
+        <div id="topMenuContent">
+            <ul id="menuLeft">
+                <li><a asp-controller="People" asp-action="Index">Home</a></li>
+                <li><a asp-controller="People" asp-action="Create">Create</a></li>
+                <li><a asp-controller="People">Contact</a></li>
+            </ul>
+
+            <ul id="menuRight">
+                <li><a asp-controller="People">About</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="content">
+        
+        <h1>@ViewData["Title"]</h1>
+    
+        @RenderBody()
+
+    </div>
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.1.0.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/jquery.validate/1.14.0/jquery.validate.min.js"></script>
+    <script src="http://ajax.aspnetcdn.com/ajax/mvc/5.2.3/jquery.validate.unobtrusive.min.js"></script>
+
+</body>
+</html>
